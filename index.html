@@ -53,7 +53,7 @@
                 <!-- CheckBox -->
                 <div class="flex  gap-2 items-center bg-slate-100 p-3 rounded-3xl">
                     <img src="./assets/checkbox.png" alt="" class="w-6">
-                    <p class="text-2xl font-bold">23</p>
+                    <p class="text-2xl font-bold" id="ComTask">23</p>
                 </div>
                 
                 <!-- Color Button -->
@@ -82,7 +82,7 @@
                     </div>
                     <div>
                         <p class="text-sm font-semibold text-[rgba(0,48,60,1)]" >Task Assigned</p>
-                        <h1 class="text-3xl font-bold">06</h1>
+                        <h1 class="text-3xl font-bold" id="taskNo">6</h1>
                     </div>
 
                 </div>
@@ -117,9 +117,9 @@
              <div class="grid grid-cols-3 p-2  border-t border-dotted border-blue-200 pt-7 mt-7">
                 
                 <!-- Card -->
-                <div class="bg-slate-100 m-2 p-4 rounded-lg">
+                <div class="bg-slate-100 m-2 p-4 rounded-lg" id="Card1">
                     <p class="text-base p-3 bg-white font-normal w-32 text-center mb-7">ShopEase</p>
-                    <h1 class="text-xl font-medium mb-6">Fix Mobile Button Issue</h1>
+                    <h1 class="text-xl font-medium mb-6" id="card1title">Fix Mobile Button Issue</h1>
                     <div class="p-5 bg-white text-base rounded-lg mb-5">
                         <p class=" text-slate-400  line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                             and ensure onClick works properly</p>
@@ -130,7 +130,7 @@
                             <p class="text-sm text-slate-400">Deadline</p>
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn bg-blue-500 text-white text-base font-medium">Complete</button>
+                        <button class="btn bg-blue-500 text-white text-base font-medium" id="card1btn">Complete</button>
                     </div>
                 </div>
 
@@ -235,20 +235,18 @@
                     <p class="text-2xl font-semibold">Activity Log</p>
                 </div>
                 <div>
-                    <button class="btn text-base text-white bg-blue-600 font-semibold">Clear History</button>
+                    <button class="btn text-base text-white bg-blue-600 font-semibold" id="LogBtn">Clear History</button>
                 </div>
                
             </div>
 
             <!-- Logs -->
-             <div class="mt-5 pt-5 border-t border-dotted border-blue-200">
+             <div class="mt-5 pt-5 border-t border-dotted border-blue-200" id="LogList">
                 <div class="bg-slate-100 p-4 m-6 rounded-lg">
                     <p class="text-lg text-slate-600">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
                 </div>
 
-                <div class="bg-slate-100 p-4 m-6 rounded-lg">
-                    <p class="text-lg text-slate-600">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                </div>
+                
              </div>
 
 
