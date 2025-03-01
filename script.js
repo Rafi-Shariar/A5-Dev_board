@@ -29,7 +29,7 @@ function UpdateTaskNo(){
 
 }
 
-function UpdateActivityLog(){
+function UpdateActivityLog(id){
 
     const div = document.createElement("Div");
     div.classList.add("bg-slate-100", "p-4", "m-6" ,"rounded-lg");
@@ -40,7 +40,7 @@ function UpdateActivityLog(){
     div.appendChild(p);
 
     const time = new Date().toLocaleTimeString();
-    const title = document.getElementById('card1title').innerText;
+    const title = document.querySelector(`#${id} h1`).innerText;
 
     p.innerText = `You have Complete The Task ${title} at ${time}`;
 
@@ -51,28 +51,80 @@ function UpdateActivityLog(){
 
 }
 
-function DisableButton(){
+function DisableButton(id){
 
-    document.getElementById("card1btn").disabled = true;
+    document.getElementById(id).disabled = true;
 
 }
 
 const card1 = document.getElementById('Card1');
-card1.addEventListener('click',function(){
+card1.addEventListener('click',function(event){
+    event.preventDefault();
     AlertFuction();
     UpdateTaskNo();
-    UpdateActivityLog();
-    DisableButton();
+    UpdateActivityLog('Card1');
+    DisableButton("card1btn");
+
+});
+
+const card2 = document.getElementById('Card2');
+card2.addEventListener('click',function(event){
+    event.preventDefault();
+    AlertFuction();
+    UpdateTaskNo();
+    UpdateActivityLog('Card2');
+    DisableButton("card2btn");
+
+});
+
+const card3 = document.getElementById('Card3');
+card3.addEventListener('click',function(event){
+    event.preventDefault();
+    AlertFuction();
+    UpdateTaskNo();
+    UpdateActivityLog('Card3');
+    DisableButton("card3btn");
+
+});
 
 
-})
+const card4 = document.getElementById('Card4');
+card4.addEventListener('click',function(event){
+    event.preventDefault();
+    AlertFuction();
+    UpdateTaskNo();
+    UpdateActivityLog('Card4');
+    DisableButton("card4btn");
+
+});
+
+const card5 = document.getElementById('Card5');
+card5.addEventListener('click',function(event){
+    event.preventDefault();
+    AlertFuction();
+    UpdateTaskNo();
+    UpdateActivityLog('Card5');
+    DisableButton("card5btn");
+
+});
+
+const card6 = document.getElementById('Card6');
+card6.addEventListener('click',function(event){
+    event.preventDefault();
+    AlertFuction();
+    UpdateTaskNo();
+    UpdateActivityLog('Card6');
+    DisableButton("card6btn");
+
+});
 
 
 
 
 
-
+// Activity Log
 const logbtn = document.getElementById('LogBtn');
 logbtn.addEventListener('click',function(){
     document.getElementById('LogList').innerHTML = '';
 })
+     
