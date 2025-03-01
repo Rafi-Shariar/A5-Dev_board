@@ -58,14 +58,10 @@ function DisableButton(id){
 }
 
 
-
-
-
-
-
 // Activity Log
 const logbtn = document.getElementById('LogBtn');
 logbtn.addEventListener('click',function(){
     document.getElementById('LogList').innerHTML = '';
 })
-     
+
+
