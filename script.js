@@ -64,4 +64,21 @@ logbtn.addEventListener('click',function(){
     document.getElementById('LogList').innerHTML = '';
 })
 
+//Color Change
+
+const Colorbtn = document.getElementById('Colorbtn');
+Colorbtn.addEventListener('click',function(){
+
+    const r = Math.floor(Math.random()*200);
+    const g = Math.floor(Math.random()*200);
+    const b = Math.floor(Math.random()*200);
+    
+    const rgb = `rgb(${r}, ${g}, ${b})`;
+
+    const body = document.getElementById('body');
+    body.style.backgroundColor = rgb;
+
+})
+  
+    
 
