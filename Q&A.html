@@ -57,58 +57,62 @@
 
     <!-- Main -->
      <main class="w-10/12 mx-auto">
-        <!-- Q1 -->
-        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
-            <div class="collapse-content text-base">Ways to select an element in the DOM <br>
-                1.getElementByID <br>
-                2.getElementByClassName<br>
-                3.getElementByName
-                4.getElementByTagName<br>
-                5.querySelector<br>
-                6.querySelectorAll<br>
-                </div>
-          </div>
 
-          <!-- Q2 -->
-          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
-            <div class="collapse-content text-base"> <b>innerHTML :</b> provides access to the inner html of content  an element <br>
-                <b>innerText :</b> provides access to the inside visible content of an html element <br>
-                <b>textContent:</b>prodives access to both visible and hidden content of a HTML element
-                </div>
-          </div>
-
-          <!-- Q3 -->
-          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?
-            </div>
-            <div class="collapse-content text-base">This is a JS technique where, instead to adding event listeners on multiple child elements, we directly add a event listener to the parent element. When a event occurs at child,it can be handled by the parent element.this is because of the concept of event bubbling.</div>
-          </div>
-
-
-          <!-- Q4 -->
-          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?
-            </div>
-            <div class="collapse-content text-base">It is a process in js, when an child element get triggered for an event it first runs of the targeted element and then moves up to its parent element until it reaches the root.</div>
-          </div>
-
-            <!-- Q5 -->
-            <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?
-
-                </div>
-                <div class="collapse-content text-base"><b>Create:</b> document.createElement("p"); <br>
-                    <b>Add:</b> const p =  document.createElement("p");  document.body.appendchild(p); <br>
-                    <b>Remove :</b> const p = document,getElementByID(“parent”); const c = document,getElementByID(“child”);  p.removeChild(c);
-                    </div>
+      <div class="pb-20">
+         <!-- Q1 -->
+         <div class="collapse  bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title font-semibold border">Question-1: What are the different ways to select an element in the DOM?</div>
+          <div class=" text-base m-6">Ways to select an element in the DOM <br>
+              1. getElementByID <br>
+              2. getElementByClassName<br>
+              3. getElementByName <br>
+              4. getElementByTagName<br>
+              5. querySelector<br>
+              6. querySelectorAll<br>
               </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="collapse  bg-base-100 border border-base-300 mt-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title font-semibold border">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+          <div class="text-base m-6 "> <b>innerHTML :</b> provides access to the inner html of content  an element <br>
+              <b>innerText :</b> provides access to the inside visible content of an html element <br>
+              <b>textContent:</b>prodives access to both visible and hidden content of a HTML element
+              </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="collapse  bg-base-100 border border-base-300 mt-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title font-semibold border">Question-3: What is event delegation in the DOM?
+          </div>
+          <div class="text-base m-6">This is a JS technique where, instead to adding event listeners on multiple child elements, we directly add a event listener to the parent element. When a event occurs at child,it can be handled by the parent element.this is because of the concept of event bubbling.</div>
+        </div>
+
+
+        <!-- Q4 -->
+        <div class="collapse  bg-base-100 border border-base-300 mt-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title font-semibold border">Question-4: What is event bubbling in the DOM?
+          </div>
+          <div class="text-base m-6">It is a process in js, when an child element get triggered for an event it first runs of the targeted element and then moves up to its parent element until it reaches the root.</div>
+        </div>
+
+          <!-- Q5 -->
+          <div class="collapse  bg-base-100 border border-base-300 mt-5 ">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title font-semibold border">Question-5: How do you create, add, and remove elements using JavaScript?
+
+              </div>
+              <div class="text-base m-6"><b>Create:</b> document.createElement("p"); <br>
+                  <b>Add:</b> const p =  document.createElement("p");  document.body.appendchild(p); <br>
+                  <b>Remove :</b> const p = document.getElementByID(“parent”); const c = document.getElementByID(“child”);  p.removeChild(c);
+                  </div>
+            </div>
+      </div>
+       
      </main>
      
     <script src="./script2.js"></script>
